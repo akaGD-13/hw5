@@ -1,14 +1,4 @@
-#ifndef RECCHECK
-#include <set>
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
-// add or remove necessary headers as you please
 
-#endif
 
 #include "schedwork.h"
 
