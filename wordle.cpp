@@ -1,10 +1,16 @@
 #ifndef RECCHECK
-
-#endif
-
+//  debugging
+#include <iostream>
+//  std::remove
+#include <algorithm> 
+#include <map>
+#include <set>
 #include "wordle.h"
 #include "dict-eng.h"
 #include <string>
+#endif
+
+
 using namespace std;
 
 
