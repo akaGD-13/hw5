@@ -10,7 +10,7 @@ using namespace std;
 static const Worker_T INVALID_ID = (unsigned int)-1;
 
 
-// Add prototypes for any helper functions here
+// Add prototypes f_o_r any helper functions here
 bool schedule_helper(int day, int position, AvailabilityMatrix avail,
     const size_t dailyNeed,
     const size_t maxShifts, vector<int>& maxShifts_vec,

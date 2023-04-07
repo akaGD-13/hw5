@@ -11,8 +11,6 @@ void wordle_helper(std::string in,
     std::string floating,
     std::set<std::string>& solutions, const std::set<std::string>& dict, int num_empty);
 
-//check if the string contains the floating
-// bool check(std::string s, const std::string& in, const std::string& floating);
 
 int numofchar(string s, char c);
 
@@ -67,28 +65,6 @@ void wordle_helper(std::string in,
 
 }
 
-// bool check(std::string s, const std::string& in, const std::string& floating){
-
-//     // replace original letters with '-'
-//     for (size_t i=0; i< s.size(); i++){
-//       if (in[i] != '-'){
-//         s[i] = '-';
-//       }
-//     }
-
-//     for (size_t i=0; i < floating.size(); i++){
-//       if (s.find(floating[i]) == string::npos){
-//         // floating doesn't exist
-//         return false;
-//       }
-//       else{
-//         //found;
-//         s[s.find(floating[i])] = '-';
-//       }      
-//     }
-
-//     return true;
-// }
 
 int numofchar(string s, char c){
   int count = 0;
