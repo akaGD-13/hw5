@@ -1,4 +1,7 @@
+#ifndef RECCHECK
 
+
+#endif
 
 #include "schedwork.h"
 
@@ -37,10 +40,7 @@ bool schedule(
     }
 
     for (size_t i=0; i < avail.size(); i++){
-        vector<Worker_T> temp;
-        for (int i=0; i<dailyNeed; i++){
-          temp.push_back(-1);
-        }
+        vector<Worker_T> temp(dailyNeed, -1);
         sched.push_back(temp);
     }
     

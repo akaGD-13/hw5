@@ -1,4 +1,6 @@
+#ifndef RECCHECK
 
+#endif
 
 #include "wordle.h"
 #include "dict-eng.h"
@@ -12,7 +14,6 @@ void wordle_helper(std::string in,
     std::set<std::string>& solutions, const std::set<std::string>& dict, int num_empty);
 
 
-int numofchar(string s, char c);
 
 
 // Definition of primary wordle function
@@ -23,7 +24,12 @@ std::set<std::string> wordle(
 {
     // Add your code here
     set<std::string> solutions;
-    int num_empty = numofchar(in, '-');
+    int num_empty = 0;
+    for (size_t i=0; i < in.size(); i++){
+      if (in[i] == '-'){
+        num_empty++;
+      }
+    }
     wordle_helper(in, floating, solutions, dict, num_empty);
 
     return solutions;
@@ -65,13 +71,3 @@ void wordle_helper(std::string in,
 
 }
 
-
-int numofchar(string s, char c){
-  int count = 0;
-  for (size_t i=0; i < s.size(); i++){
-    if (s[i] == c){
-      count++;
-    }
-  }
-  return count;
-}
